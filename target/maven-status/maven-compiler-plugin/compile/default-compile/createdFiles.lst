@@ -1,2 +1,6 @@
-cizek\anv\cafe\CafeConfig.class
+cizek\anv\cafe\DrinkFactory.class
 cizek\anv\cafe\ANVCafe.class
+cizek\anv\cafe\Drink.class
+cizek\anv\cafe\Tea.class
+cizek\anv\cafe\CafeConfig.class
+cizek\anv\cafe\Coffee.class

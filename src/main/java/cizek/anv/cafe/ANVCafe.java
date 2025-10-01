@@ -12,8 +12,11 @@ public class ANVCafe {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        CafeConfig config = CafeConfig.getInstance("test");
-        System.out.println(CafeConfig.getInstance("this shouldnt work").getCafeName());
+        CafeConfig config = CafeConfig.getInstance("Smart Cafe");
         System.out.println(config.getCafeName());
+        Drink t = DrinkFactory.createDrink("tea");
+        System.out.println(t.serve());
+        Drink c = DrinkFactory.createDrink("coffee");
+        System.out.println(c.serve());
     }
 }
