@@ -18,5 +18,7 @@ public class ANVCafe {
         System.out.println(t.serve());
         Drink c = DrinkFactory.createDrink("coffee");
         System.out.println(c.serve());
+        CustomDrink cd = new CustomDrink.Builder("coffee").milk().sugar().build();
+        System.out.println(cd);
     }
 }
