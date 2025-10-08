@@ -1,2 +1,3 @@
 tests\DrinkFactoryTest.class
 tests\CafeConfigTest.class
+tests\CustomDrinkTest.class
