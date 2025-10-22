@@ -28,17 +28,29 @@ public class DrinkFactoryTest {
     @Test
     void testTeaString() {
         Drink d = DrinkFactory.createDrink("TeA");
-        assertEquals(d.serve(), "Serving Tea", "object should be a tea drink no matter the capitalization of letters in argument");
+        assertEquals(d.serve(), "Ordered Tea", "object should be a tea drink no matter the capitalization of letters in argument");
     }
     
     @Test
     void testCoffeeString() {
         Drink d = DrinkFactory.createDrink("cOFfeE");
-        assertEquals(d.serve(), "Serving Coffee", "object should be a coffee drink no matter the capitalization of letters in argument");
+        assertEquals(d.serve(), "Ordered Coffee", "object should be a coffee drink no matter the capitalization of letters in argument");
     }
     
     @Test
     void testIllegalDrink() {
         Exception e = assertThrows(IllegalArgumentException.class, () -> {DrinkFactory.createDrink("fail");});        
+    }
+    
+    @Test
+    void testGetNameTea() {
+        Drink d = DrinkFactory.createDrink("tea");
+        assertEquals(d.getName(), "Tea");
+    }
+    
+    @Test
+    void testGetNameCoffee() {
+        Drink d = DrinkFactory.createDrink("coffee");
+        assertEquals(d.getName(), "Coffee");
     }
 }
