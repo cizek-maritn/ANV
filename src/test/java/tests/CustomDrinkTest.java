@@ -27,13 +27,13 @@ public class CustomDrinkTest {
     @Test
     void testDefaultValues() {
         CustomDrink drink = new CustomDrink.Builder("tea").build();
-        assertEquals(drink.toString(), "Serving Tea", "drink ingredients are written out only if theyre true");
+        assertEquals(drink.toString(), "Ordered Tea", "drink ingredients are written out only if theyre true");
     }
     
     @Test
     void testIngredients() {
         CustomDrink drink = new CustomDrink.Builder("tea").milk().sugar().caramel().build();
-        assertEquals(drink.toString(), "Serving Tea, milk, sugar, caramel", "drink ingredients are written out because they are set to true");
+        assertEquals(drink.toString(), "Ordered Tea, milk, sugar, caramel", "drink ingredients are written out because they are set to true");
     }
     
     @Test

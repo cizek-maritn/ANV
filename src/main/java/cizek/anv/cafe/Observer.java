@@ -8,10 +8,6 @@ package cizek.anv.cafe;
  *
  * @author DELL
  */
-public interface Drink {
-    String getName();
-    
-    default String serve() {
-        return "Ordered " + getName();
-    }
+public interface Observer {
+    void update(String status);
 }

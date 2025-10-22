@@ -10,7 +10,7 @@ package cizek.anv.cafe;
  */
 public class Coffee implements Drink {
     @Override
-    public String serve() {
-        return "Serving Coffee";
+    public String getName() {
+        return "Coffee";
     }
 }

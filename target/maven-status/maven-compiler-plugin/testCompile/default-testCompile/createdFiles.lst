@@ -1,3 +1,4 @@
+tests\OrderSubjectObserverTest.class
+tests\CustomDrinkTest.class
 tests\DrinkFactoryTest.class
 tests\CafeConfigTest.class
-tests\CustomDrinkTest.class
