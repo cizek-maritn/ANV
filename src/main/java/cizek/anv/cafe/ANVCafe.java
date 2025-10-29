@@ -22,9 +22,12 @@ public class ANVCafe {
         Drink c = DrinkFactory.createDrink("coffee");
         System.out.println(c.serve());
         
+        EmployeeObserver waiter = new EmployeeObserver("Waiter");
+        EmployeeObserver barista = new EmployeeObserver("Barista");
+        
         OrderSubject order = new OrderSubject();
-        order.addObserver(new EmployeeObserver("Barista"));
-        order.addObserver(new EmployeeObserver("Waiter"));
+        order.addObserver(barista);
+        order.addObserver(waiter);
         
         CustomDrink cd = new CustomDrink.Builder("coffee").milk().sugar().build();
         //System.out.println(cd);
@@ -32,5 +35,13 @@ public class ANVCafe {
         //String msg=null;
         
         order.notifyAll(msg);
+        
+        OrderSubject payment = new OrderSubject();
+        payment.addObserver(waiter);
+        
+        Checkout checkout = new Checkout(new CardPaymentStrategy());
+        payment.notifyAll(checkout.processPayment(150, 4));
+        checkout.setStrategy(new CashPaymentStrategy());
+        payment.notifyAll(checkout.processPayment(100, 2));
     }
 }

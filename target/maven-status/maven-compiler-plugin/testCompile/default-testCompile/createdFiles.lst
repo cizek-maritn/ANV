@@ -1,3 +1,4 @@
+CheckoutTest.class
 tests\OrderSubjectObserverTest.class
 tests\CustomDrinkTest.class
 tests\DrinkFactoryTest.class
