@@ -1,5 +1,8 @@
 C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\ANVCafe.java
 C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\CafeConfig.java
+C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\CardPaymentStrategy.java
+C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\CashPaymentStrategy.java
+C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\Checkout.java
 C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\Coffee.java
 C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\CustomDrink.java
 C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\Drink.java
@@ -7,4 +10,5 @@ C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\D
 C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\EmployeeObserver.java
 C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\Observer.java
 C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\OrderSubject.java
+C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\PaymentStrategy.java
 C:\Users\DELL\Documents\NetBeansProjects\ANV-cafe\src\main\java\cizek\anv\cafe\Tea.java

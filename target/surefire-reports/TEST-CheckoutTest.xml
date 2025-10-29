@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tests.OrderSubjectObserverTest" time="0.052" tests="11" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="CheckoutTest" time="0.103" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -60,15 +60,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="testNotifyAll" classname="tests.OrderSubjectObserverTest" time="0.015"/>
-  <testcase name="testSingleUpdate" classname="tests.OrderSubjectObserverTest" time="0.001"/>
-  <testcase name="testRemoveOrderSubjectNull" classname="tests.OrderSubjectObserverTest" time="0.002"/>
-  <testcase name="testUpdatePrintsMessage" classname="tests.OrderSubjectObserverTest" time="0.002"/>
-  <testcase name="testRemoveOrderSubject" classname="tests.OrderSubjectObserverTest" time="0.002"/>
-  <testcase name="testAssignEmployeeObserverNameNull" classname="tests.OrderSubjectObserverTest" time="0.003"/>
-  <testcase name="testAddOrderSubject" classname="tests.OrderSubjectObserverTest" time="0.001"/>
-  <testcase name="testAssignEmployeeObserverName" classname="tests.OrderSubjectObserverTest" time="0.003"/>
-  <testcase name="testUpdateDoesNotPrintWhenStatusIsNull" classname="tests.OrderSubjectObserverTest" time="0.001"/>
-  <testcase name="testNotifyAllNull" classname="tests.OrderSubjectObserverTest" time="0.001"/>
-  <testcase name="testAddOrderSubjectNull" classname="tests.OrderSubjectObserverTest" time="0.002"/>
+  <testcase name="testNullCheckout" classname="CheckoutTest" time="0.047"/>
+  <testcase name="testCardCheckout" classname="CheckoutTest" time="0.007"/>
+  <testcase name="testSetStrategy" classname="CheckoutTest" time="0.003"/>
+  <testcase name="testCashCheckout" classname="CheckoutTest" time="0.002"/>
 </testsuite>
