@@ -3,8 +3,10 @@ cizek\anv\cafe\Checkout.class
 cizek\anv\cafe\ANVCafe.class
 cizek\anv\cafe\Observer.class
 cizek\anv\cafe\CafeConfig.class
+cizek\anv\cafe\Command.class
 cizek\anv\cafe\DrinkFactory.class
 cizek\anv\cafe\CustomDrink$Builder.class
+cizek\anv\cafe\PaymentCommand.class
 cizek\anv\cafe\CustomDrink.class
 cizek\anv\cafe\Drink.class
 cizek\anv\cafe\Tea.class
@@ -12,4 +14,5 @@ cizek\anv\cafe\OrderSubject.class
 cizek\anv\cafe\EmployeeObserver.class
 cizek\anv\cafe\CardPaymentStrategy.class
 cizek\anv\cafe\Coffee.class
+cizek\anv\cafe\OrderCommand.class
 cizek\anv\cafe\PaymentStrategy.class
