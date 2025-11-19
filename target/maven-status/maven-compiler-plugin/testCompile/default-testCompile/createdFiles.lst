@@ -1,5 +1,6 @@
-CheckoutTest.class
+tests\CommandTest.class
 tests\OrderSubjectObserverTest.class
 tests\CustomDrinkTest.class
+tests\CheckoutTest.class
 tests\DrinkFactoryTest.class
 tests\CafeConfigTest.class

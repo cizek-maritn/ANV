@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: tests.OrderSubjectObserverTest
+Test set: tests.CheckoutTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s -- in tests.OrderSubjectObserverTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s -- in tests.CheckoutTest
