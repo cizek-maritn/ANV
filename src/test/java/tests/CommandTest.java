@@ -47,7 +47,7 @@ public class CommandTest {
         OrderSubject order = new OrderSubject();
         order.addObserver(barista);
         CustomDrink coffee = new CustomDrink.Builder("coffee").milk().sugar().build();
-        Command coffeeOrder = new OrderCommand(order, coffee + ".");
+        Command coffeeOrder = new OrderCommand(order, coffee.serve() + ".");
         coffeeOrder.execute();
         
         String output = outContent.toString().trim();

@@ -8,13 +8,13 @@ package cizek.anv.cafe;
  *
  * @author DELL
  */
-public class CustomDrink{
-    private String base;
-    private boolean sugar;
-    private boolean milk;
-    private boolean caramel;
+public class CustomDrink implements Drink{
+    protected String base;
+    protected boolean sugar;
+    protected boolean milk;
+    protected boolean caramel;
     
-    private CustomDrink(Builder b) {
+    protected CustomDrink(Builder b) {
         this.base=b.base;
         this.sugar=b.sugar;
         this.milk=b.milk;
@@ -22,12 +22,17 @@ public class CustomDrink{
     }
     
     @Override
-    public String toString() {
+    public String serve() {
         if (base==null) return null;
         return DrinkFactory.createDrink(base).serve()
             + (milk ? ", milk" : "")
             + (sugar ? ", sugar" : "")
             + (caramel ? ", caramel" : "");
+    }
+
+    @Override
+    public String getName() {
+        return this.base;
     }
     
     public static class Builder {
