@@ -27,13 +27,19 @@ public class CustomDrinkTest {
     @Test
     void testDefaultValues() {
         CustomDrink drink = new CustomDrink.Builder("tea").build();
-        assertEquals(drink.toString(), "Ordered Tea", "drink ingredients are written out only if theyre true");
+        assertEquals(drink.serve(), "Ordered Tea", "drink ingredients are written out only if theyre true");
+    }
+    
+    @Test
+    void testGetName() {
+        CustomDrink drink = new CustomDrink.Builder("tea").build();
+        assertEquals(drink.getName(), "tea");
     }
     
     @Test
     void testIngredients() {
         CustomDrink drink = new CustomDrink.Builder("tea").milk().sugar().caramel().build();
-        assertEquals(drink.toString(), "Ordered Tea, milk, sugar, caramel", "drink ingredients are written out because they are set to true");
+        assertEquals(drink.serve(), "Ordered Tea, milk, sugar, caramel", "drink ingredients are written out because they are set to true");
     }
     
     @Test
@@ -43,18 +49,18 @@ public class CustomDrinkTest {
         CustomDrink second = builder.sugar().build();
 
         // first should not magically gain sugar
-        assertNotEquals(first.toString(), second.toString());
+        assertNotEquals(first.serve(), second.serve());
     }
     
     @Test
     void testNullBase() {
         CustomDrink drink = new CustomDrink.Builder(null).build();
-        assertNull(drink.toString());
+        assertNull(drink.serve());
     }
     
     @Test
     void testIllegalBase() {
         CustomDrink drink = new CustomDrink.Builder("var").milk().build();
-        Exception e = assertThrows(IllegalArgumentException.class, () -> {drink.toString();});
+        Exception e = assertThrows(IllegalArgumentException.class, () -> {drink.serve();});
     }
 }

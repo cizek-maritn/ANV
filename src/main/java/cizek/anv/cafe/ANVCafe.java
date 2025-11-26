@@ -20,14 +20,16 @@ public class ANVCafe {
         OrderSubject payment = new OrderSubject();
         payment.addObserver(waiter);
         
-        CustomDrink coffee = new CustomDrink.Builder("coffee").milk().sugar().build();
-        CustomDrink tea = new CustomDrink.Builder("tea").sugar().build();
+        Drink coffee = new CustomDrink.Builder("coffee").milk().sugar().build();
+        coffee = new OwnMugDecorator(new ToGoDecorator(coffee));
+        Drink tea = new CustomDrink.Builder("tea").sugar().build();
+        tea = new OwnMugDecorator(tea);
         
         CafeConfig config = CafeConfig.getInstance("Smart Cafe");
         String cafeName = config.getCafeName();
         
-        Command coffeeOrder = new OrderCommand(order, coffee + " in " + cafeName);
-        Command teaOrder = new OrderCommand(order,tea + " in " + cafeName);
+        Command coffeeOrder = new OrderCommand(order, coffee.serve() + " in " + cafeName);
+        Command teaOrder = new OrderCommand(order,tea.serve() + " in " + cafeName);
         
         coffeeOrder.execute();
         teaOrder.execute();
