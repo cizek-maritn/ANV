@@ -54,4 +54,11 @@ public class DecoratorTest {
         Drink coffee = new OwnMugDecorator(new ToGoDecorator(null));
         Exception e = assertThrows(NullPointerException.class, () -> {coffee.serve();});
     }
+    
+    @Test
+    void testGetName() {
+        Drink coffee = new CustomDrink.Builder("Coffee").milk().sugar().build();
+        coffee = new OwnMugDecorator(new ToGoDecorator(coffee));
+        assertEquals("Coffee", coffee.getName());
+    }
 }

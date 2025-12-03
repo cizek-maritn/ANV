@@ -2,6 +2,8 @@ tests\OrderSubjectObserverTest.class
 tests\CustomDrinkTest.class
 tests\CheckoutTest.class
 tests\DrinkFactoryTest.class
+tests\PreparableDrinkTest.class
 tests\CommandTest.class
 tests\CafeConfigTest.class
+tests\DrinkTemplateTest.class
 tests\DecoratorTest.class

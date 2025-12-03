@@ -19,4 +19,9 @@ public abstract class CustomDrinkDecorator implements Drink{
     public String serve() {
         return wrapped.serve();
     }
+    
+    @Override
+    public String getName() {
+        return wrapped.getName();
+    }
 }

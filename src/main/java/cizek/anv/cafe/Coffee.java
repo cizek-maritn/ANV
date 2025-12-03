@@ -8,9 +8,14 @@ package cizek.anv.cafe;
  *
  * @author DELL
  */
-public class Coffee implements Drink {
+public class Coffee extends DrinkTemplate implements Drink {
     @Override
     public String getName() {
         return "Coffee";
+    }
+
+    @Override
+    protected void brew() {
+        System.out.println("[APP] Brewing a fragrant coffee");
     }
 }
