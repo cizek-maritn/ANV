@@ -22,6 +22,6 @@ public class ToGoDecorator extends CustomDrinkDecorator{
 
     @Override
     public String getName() {
-        return null;
+        return super.getName();
     }
 }
